@@ -114,9 +114,10 @@ export function AboutSection() {
                 onde cada atendimento e feito com carinho, dedicacao e atencao aos minimos detalhes.
               </p>
               <p>
-                Ao longo da minha trajetoria venho aprimorando tecnicas, tendencias e experiencias 
-                para oferecer nao apenas unhas bonitas, mas <span className="text-elegant-black font-medium">autoestima, 
-                elegancia e bem-estar</span>.
+                Sou <span className="text-elegant-black font-medium">especialista em unhas de gel no modelo F1</span>, 
+                uma tecnica que proporciona resultados elegantes e duradouros. Ao longo da minha trajetoria 
+                venho aprimorando tecnicas e tendencias para oferecer nao apenas unhas bonitas, mas{" "}
+                <span className="text-elegant-black font-medium">autoestima, elegancia e bem-estar</span>.
               </p>
               <p className="text-rose-gold italic text-base md:text-lg border-l-2 border-rose-gold/30 pl-4">
                 Meu objetivo e fazer com que cada cliente se sinta unica, confiante e ainda mais linda.

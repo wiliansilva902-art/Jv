@@ -18,6 +18,17 @@ const portfolioImages = [
   "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG-20260508-WA0005-Hb2XsqBHCYjGZ5BwqgiRfDxDfFcegA.jpg",
   "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG-20260508-WA0006-h4ZVSt3BE8kMQJeLLjr252lzsebXRJ.jpg",
   "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG-20260508-WA0003-GbUquwiEmVttJ4nfRg3FJSzoi6Fi1w.jpg",
+  "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG-20261006-WA0232-ZjO4DRJzXkBjmTde2rkkpQAarfAFJ8.jpg",
+  "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG-20261006-WA0236-BoaYFW26rSmAYpQFInMnPi2gm6tJlS.jpg",
+  "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG-20261006-WA0227-rcNt5G6v2aJYiP74gu397fFyb4PvRf.jpg",
+  "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG-20261006-WA0228-bxt89vZoOI71xiJx0yW5CxmLvKTIE7.jpg",
+  "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG-20261006-WA0233-53zXARjT86iU0vZhaqlkvZc9Z3kxYr.jpg",
+  "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG-20261006-WA0233%281%29-F2zGDf1k0eFHr6pkpq1QbDoiSdt6b4.jpg",
+  "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG-20261006-WA0231-6GyKiy1d42TS4awXqFHkfcZ5w8j1qe.jpg",
+  "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG-20261006-WA0229-5XrDGnTNJVWQJ4S8BsZFtUub9UD93z.jpg",
+  "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG-20261006-WA0235-T3OR3yRHRmtX50uaQ24uEhSQ7SciWm.jpg",
+  "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/motion_photo_2136937476356940164-mGbu7vnf3skwm4OaXygnX56USSI5ok.jpg",
+  "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG-20261006-WA0232%281%29-FtdsaTDyOHg84HFuTvaOfhwUkQGRP5.jpg",
 ]
 
 export function PortfolioSection() {

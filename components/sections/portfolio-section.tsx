@@ -102,42 +102,6 @@ export function PortfolioSection() {
           </Swiper>
         </motion.div>
 
-        {/* Grid gallery */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={isInView ? { opacity: 1 } : {}}
-          transition={{ duration: 0.6, delay: 0.4 }}
-          className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-4 max-w-4xl mx-auto"
-        >
-          {portfolioImages.map((src, index) => (
-            <motion.div
-              key={`grid-${index}`}
-              initial={{ 
-                opacity: 0, 
-                y: 20,
-              }}
-              animate={isInView ? { 
-                opacity: 1, 
-                y: 0,
-              } : {}}
-              transition={{ 
-                duration: 0.5, 
-                delay: 0.5 + index * 0.06,
-              }}
-              whileHover={{ scale: 1.03 }}
-              onClick={() => setSelectedImage(src)}
-              className="group relative aspect-square rounded-lg overflow-hidden cursor-pointer shadow-md hover:shadow-xl transition-shadow duration-300"
-            >
-              <Image
-                src={src}
-                alt={`Trabalho ${index + 1}`}
-                fill
-                className="object-cover transition-transform duration-500 group-hover:scale-110"
-              />
-              <div className="absolute inset-0 bg-rose-gold/0 group-hover:bg-rose-gold/10 transition-colors duration-300" />
-            </motion.div>
-          ))}
-        </motion.div>
       </div>
 
       {/* Lightbox */}

@@ -163,6 +163,42 @@ export function AboutSection() {
             </motion.div>
           </motion.div>
         </div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 48 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.2 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          className="mt-16 grid lg:grid-cols-[1.05fr_0.95fr] gap-8 lg:gap-14 items-center max-w-5xl mx-auto"
+        >
+          <div className="relative overflow-hidden rounded-2xl shadow-xl shadow-elegant-black/10 border border-rose-gold/15">
+            <Image
+              src="/images/ambiente-julia.jpg"
+              alt="Espaço de atendimento com produtos para unhas"
+              width={1200}
+              height={1600}
+              className="w-full aspect-[4/3] object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-elegant-black/25 via-transparent to-transparent" />
+          </div>
+
+          <div className="space-y-4">
+            <span className="text-rose-gold text-xs tracking-[0.2em] uppercase font-medium">
+              Meu cantinho
+            </span>
+            <h3 className="font-serif text-2xl md:text-3xl text-elegant-black">
+              Cuidado em cada detalhe
+            </h3>
+            <p className="text-elegant-black-light text-sm md:text-base leading-relaxed">
+              Trabalho com produtos de qualidade e um ambiente improvisado, mas muito aconchegante,
+              preparado com carinho para receber você.
+            </p>
+            <p className="text-elegant-black-light text-sm md:text-base leading-relaxed">
+              Vem comigo acompanhar a evolução do meu trabalho e se satisfazer a cada passo com um
+              trabalho de qualidade.
+            </p>
+          </div>
+        </motion.div>
       </div>
     </section>
   )

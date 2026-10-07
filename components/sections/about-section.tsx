@@ -21,11 +21,25 @@ export function AboutSection() {
       ref={containerRef}
       className="relative py-12 md:py-16 overflow-hidden bg-cream"
     >
-      {/* Subtle background */}
-      <div className="absolute inset-0 pointer-events-none overflow-hidden">
-        <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-radial from-rose-gold/5 to-transparent rounded-full blur-3xl" />
-        <div className="absolute bottom-0 left-0 w-80 h-80 bg-gradient-radial from-nude-pink/8 to-transparent rounded-full blur-3xl" />
-      </div>
+      {/* A foto acompanha a seção como um papel de parede suave e surge durante a rolagem. */}
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 0.16 }}
+        viewport={{ once: true, amount: 0.18 }}
+        transition={{ duration: 1.4, ease: "easeOut" }}
+        className="absolute inset-0 pointer-events-none overflow-hidden"
+        aria-hidden="true"
+      >
+        <Image
+          src="/images/ambiente-julia.jpg"
+          alt=""
+          fill
+          sizes="100vw"
+          className="object-cover object-center grayscale-[15%]"
+        />
+        <div className="absolute inset-0 bg-cream/75" />
+        <div className="absolute inset-0 bg-gradient-to-b from-cream/90 via-cream/55 to-cream/90" />
+      </motion.div>"
 
       <div className="container mx-auto px-6 relative z-10">
         {/* Section title */}

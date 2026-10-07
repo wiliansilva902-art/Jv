@@ -21,13 +21,13 @@ export function AboutSection() {
       ref={containerRef}
       className="relative py-12 md:py-16 overflow-hidden bg-cream"
     >
-      {/* A foto acompanha a seção como um papel de parede suave e surge durante a rolagem. */}
+      {/* O papel de parede começa abaixo do título para não criar uma barreira durante a entrada na seção. */}
       <motion.div
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 0.16 }}
-        viewport={{ once: true, amount: 0.18 }}
-        transition={{ duration: 1.4, ease: "easeOut" }}
-        className="absolute inset-0 pointer-events-none overflow-hidden"
+        initial={{ opacity: 0, scale: 1.03 }}
+        whileInView={{ opacity: 0.1, scale: 1 }}
+        viewport={{ once: true, amount: 0.3 }}
+        transition={{ duration: 1.8, ease: [0.22, 1, 0.36, 1] }}
+        className="absolute inset-x-0 top-36 bottom-0 pointer-events-none overflow-hidden"
         aria-hidden="true"
       >
         <Image
@@ -37,9 +37,9 @@ export function AboutSection() {
           sizes="100vw"
           className="object-cover object-center grayscale-[15%]"
         />
-        <div className="absolute inset-0 bg-cream/75" />
-        <div className="absolute inset-0 bg-gradient-to-b from-cream/90 via-cream/55 to-cream/90" />
-      </motion.div>"
+        <div className="absolute inset-0 bg-cream/80" />
+        <div className="absolute inset-0 bg-gradient-to-b from-cream/95 via-cream/65 to-cream/90" />
+      </motion.div>
 
       <div className="container mx-auto px-6 relative z-10">
         {/* Section title */}

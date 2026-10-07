@@ -64,7 +64,7 @@ export function AboutSection() {
               {/* Image */}
               <div className="relative aspect-[3/4] rounded-xl overflow-hidden shadow-xl shadow-elegant-black/8">
                 <Image
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/file_00000000148c71f58441eed866a71073-ynNC3pFhmvg6LvtrLb8ANvk18fYj68.png"
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG-20261006-WA0216-gpWnPUVv3HhggQcOmb1P8vm9kPWbjZ.jpg"
                   alt="Julia Vitoria - Nail Designer"
                   fill
                   className="object-cover object-top"

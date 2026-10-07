@@ -110,16 +110,34 @@ export function AboutSection() {
               className="space-y-4 text-elegant-black-light text-sm md:text-base leading-relaxed"
             >
               <p>
-                A paixao pela beleza e pelo cuidado feminino me trouxe ao universo da nail design, 
-                onde cada atendimento e feito com carinho, dedicacao e atencao aos minimos detalhes.
+                A paixão pela beleza e pelo cuidado feminino me trouxe ao universo da nail design,
+                onde cada atendimento é feito com carinho, dedicação e atenção aos mínimos detalhes.
               </p>
               <p>
-                Ao longo da minha trajetoria venho aprimorando tecnicas, tendencias e experiencias 
-                para oferecer nao apenas unhas bonitas, mas <span className="text-elegant-black font-medium">autoestima, 
-                elegancia e bem-estar</span>.
+                Sou iniciante e estou adquirindo experiência a cada atendimento, sempre com dedicação
+                para oferecer um trabalho cuidadoso e feito especialmente para você.
               </p>
+              <p className="text-rose-gold font-medium border-l-2 border-rose-gold/30 pl-4">
+                Atendimento somente com horário marcado.
+              </p>
+              <div className="rounded-2xl bg-white/60 border border-rose-gold/10 p-4">
+                <h4 className="font-serif text-lg text-elegant-black mb-3">Trabalhos que ofereço</h4>
+                <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-sm">
+                  {[
+                    "Banho de gel",
+                    "Blindagem",
+                    "Alongamento na técnica molde F1",
+                    "Nail art",
+                  ].map((service) => (
+                    <li key={service} className="flex items-center gap-2">
+                      <span className="w-1.5 h-1.5 rounded-full bg-rose-gold shrink-0" />
+                      {service}
+                    </li>
+                  ))}
+                </ul>
+              </div>
               <p className="text-rose-gold italic text-base md:text-lg border-l-2 border-rose-gold/30 pl-4">
-                Meu objetivo e fazer com que cada cliente se sinta unica, confiante e ainda mais linda.
+                Meu objetivo é fazer com que cada cliente se sinta única, confiante e ainda mais linda.
               </p>
             </motion.div>
 

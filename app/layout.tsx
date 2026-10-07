@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Playfair_Display, Outfit, Dancing_Script } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
+import { SiteProtection } from '@/components/site-protection'
 
 const playfair = Playfair_Display({ 
   subsets: ["latin"],
@@ -48,6 +49,7 @@ export default function RootLayout({
   return (
     <html lang="pt-BR" className={`${playfair.variable} ${outfit.variable} ${dancing.variable} bg-[#F6F2E9]`}>
       <body className="font-sans antialiased bg-[#F6F2E9] text-[#2D2926] overflow-x-hidden">
+        <SiteProtection />
         {children}
         {process.env.NODE_ENV === 'production' && <Analytics />}
       </body>

@@ -12,7 +12,7 @@ const services = [
     description: "Deixa suas unhas mais fortes, uniformes e com um brilho incrível, sem perder a naturalidade.",
     price: "R$ 55,00",
     maintenance: "R$ 40,00",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG-20261007-WA0055-8eo5BQUMado2f2Fy5wjLb70fczLVjQ.jpg",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG-20261007-WA0054-HJzpfHdouhAeJogRA0Cc1fjt00fZkm.jpg",
     objectPosition: "center 52%",
   },
   {
@@ -20,7 +20,7 @@ const services = [
     description: "Mais resistência, brilho e proteção para suas unhas, com um acabamento impecável.",
     price: "R$ 45,00",
     maintenance: "R$ 30,00",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG-20261007-WA0056-fXQn7PYerbO5ddNr6yLkHHVVtCsvn6.jpg",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG-20261007-WA0055-8eo5BQUMado2f2Fy5wjLb70fczLVjQ.jpg",
     objectPosition: "center 50%",
   },
   {
@@ -28,7 +28,7 @@ const services = [
     description: "Unhas mais longas, resistentes e com um visual incrível, do jeitinho que você sempre sonhou.",
     price: "R$ 65,00",
     maintenance: "R$ 50,00",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG-20261007-WA0054-HJzpfHdouhAeJogRA0Cc1fjt00fZkm.jpg",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG-20261007-WA0056-fXQn7PYerbO5ddNr6yLkHHVVtCsvn6.jpg",
     objectPosition: "center 58%",
   },
 ]

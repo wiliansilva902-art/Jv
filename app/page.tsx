@@ -3,6 +3,7 @@
 import { HeroSection } from "@/components/sections/hero-section"
 import { AboutSection } from "@/components/sections/about-section"
 import { PortfolioSection } from "@/components/sections/portfolio-section"
+import { CatalogSection } from "@/components/sections/catalog-section"
 import { DifferentialsSection } from "@/components/sections/differentials-section"
 import { TestimonialsSection } from "@/components/sections/testimonials-section"
 import { CTASection } from "@/components/sections/cta-section"
@@ -15,6 +16,7 @@ export default function Home() {
       <HeroSection />
       <AboutSection />
       <PortfolioSection />
+      <CatalogSection />
       <DifferentialsSection />
       <TestimonialsSection />
       <CTASection />

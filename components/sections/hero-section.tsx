@@ -64,8 +64,8 @@ export function HeroSection() {
   const logoScale = useTransform(scrollYProgress, [0, 0.5], [1, 0.85])
   const logoOpacity = useTransform(scrollYProgress, [0, 0.5], [1, 0])
   const contentY = useTransform(scrollYProgress, [0, 0.5], [0, 80])
-  const handsSeparation = useTransform(scrollYProgress, [0, 0.5], [0, 150])
-  const handsOpacity = useTransform(scrollYProgress, [0, 0.35], [0.9, 0])
+  const handsScale = useTransform(scrollYProgress, [0, 0.5], [1, 1.08])
+  const handsOpacity = useTransform(scrollYProgress, [0, 0.35], [0.92, 0])
   
   useEffect(() => {
     setParticles(generateParticles(15))
@@ -177,38 +177,6 @@ export function HeroSection() {
           </motion.div>
         </motion.div>
 
-        {/* Decorative hands gently separate as the visitor scrolls down */}
-        <motion.div
-          aria-hidden="true"
-          style={{ opacity: handsOpacity }}
-          className="relative h-28 w-[min(100vw,760px)] -mt-2 mb-2 pointer-events-none"
-        >
-          <motion.div
-            style={{ x: useTransform(handsSeparation, (value) => -value) }}
-            className="absolute inset-y-0 left-0 w-1/2 overflow-hidden"
-          >
-            <Image
-              src="/images/hands-hero.png"
-              alt=""
-              width={760}
-              height={240}
-              className="absolute right-0 top-1/2 h-auto w-[min(100vw,760px)] max-w-none -translate-y-1/2"
-            />
-          </motion.div>
-          <motion.div
-            style={{ x: handsSeparation }}
-            className="absolute inset-y-0 right-0 w-1/2 overflow-hidden"
-          >
-            <Image
-              src="/images/hands-hero.png"
-              alt=""
-              width={760}
-              height={240}
-              className="absolute left-0 top-1/2 h-auto w-[min(100vw,760px)] max-w-none -translate-y-1/2"
-            />
-          </motion.div>
-        </motion.div>
-
         {/* Main headline */}
         <motion.h1
           initial={{ opacity: 0, y: 16 }}
@@ -229,6 +197,21 @@ export function HeroSection() {
         >
           Unhas sofisticadas, atendimento delicado e uma experiência feita especialmente para você.
         </motion.p>
+
+        {/* Mãos decorativas abaixo das informações, com movimento suave no scroll */}
+        <motion.div
+          aria-hidden="true"
+          style={{ opacity: handsOpacity, scale: handsScale }}
+          className="relative z-10 -mt-2 mb-5 flex h-24 w-full max-w-[620px] items-center justify-center overflow-hidden pointer-events-none"
+        >
+          <Image
+            src="/images/hands-hero.png"
+            alt=""
+            width={760}
+            height={240}
+            className="h-auto w-full object-contain mix-blend-multiply opacity-80"
+          />
+        </motion.div>
 
         {/* Buttons */}
         <motion.div

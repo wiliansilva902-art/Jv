@@ -80,7 +80,7 @@ export function HeroSection() {
   return (
     <section
       ref={containerRef}
-      className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden bg-cream"
+      className="relative min-h-screen flex flex-col items-center justify-start overflow-hidden bg-cream pt-8 md:pt-12"
     >
       {/* Background gradient orbs */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">

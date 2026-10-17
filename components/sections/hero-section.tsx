@@ -73,6 +73,10 @@ export function HeroSection() {
     document.getElementById("sobre")?.scrollIntoView({ behavior: "smooth" })
   }
 
+  const scrollToCatalog = () => {
+    document.getElementById("catalogo")?.scrollIntoView({ behavior: "smooth" })
+  }
+
   return (
     <section
       ref={containerRef}
@@ -200,12 +204,12 @@ export function HeroSection() {
           className="flex flex-col sm:flex-row gap-3 w-full sm:w-auto"
         >
           <motion.button
-            onClick={scrollToAbout}
+            onClick={scrollToCatalog}
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.98 }}
             className="group relative px-7 py-3.5 rounded-full border border-rose-gold/60 text-rose-gold font-medium text-sm overflow-hidden transition-all duration-300 hover:border-rose-gold hover:text-white"
           >
-            <span className="relative z-10">Conhecer meu trabalho</span>
+            <span className="relative z-10">Ver catálogo</span>
             <motion.div
               className="absolute inset-0 bg-rose-gold"
               initial={{ x: "-100%" }}
